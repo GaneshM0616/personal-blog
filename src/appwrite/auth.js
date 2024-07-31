@@ -21,14 +21,14 @@ export class AuthService{
         }catch (error){
             throw error
         }
-     }
+        }
 
      async login({email, password}){
         try {
             return await this.account.createEmailPasswordSession(email,password)
         } catch (error) {
             throw error
-        }
+     }
      }
 
      async getCurrentUser(){
